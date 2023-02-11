@@ -4,7 +4,7 @@ const connectToMongo = require('./db')
 const cors = require('cors')
 const dotenv = require('dotenv')
 dotenv.config()
-const PORT = process.nextTick.PORT||process.env.BACKEND_PORT;
+const PORT = process.env.PORT||process.env.BACKEND_PORT;
 
 connectToMongo();
 app.use(cors())
